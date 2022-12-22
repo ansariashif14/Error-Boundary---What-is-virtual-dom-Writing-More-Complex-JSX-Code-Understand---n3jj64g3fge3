@@ -3,7 +3,15 @@ import "../styles/App.css";
 import Component from "./Component";
 import ErrorBoundary from "./ErrorBoundary";
 const App = () => {
+  
+  let setFunc;
+  let changeFunc = (func) => {
+  setFunc = func;
+};
 
+const errorGenerator = () => {
+setFunc(true);
+}
 
   return (
 

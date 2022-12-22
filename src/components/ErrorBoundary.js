@@ -5,9 +5,8 @@ class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      return (
-        <p id="error">
-          
+      return ( <p id="error">
+         There is an Error!
         </p>
       );
     }
