@@ -3,13 +3,13 @@ import React, { useState } from "react";
 const Component = (props) => {
     
     const [error, setError] = useState(false);
-    // props.change(setError);
-    // if(error)
+    props.change(setError);
     
-    //   throw new Error("There is an Error");
-    
-  return (
-    <>
+    if(error)
+    {
+      throw new error("Error")
+    }
+  return ( <>
     {    
         error && <div>{somethingNotDefined}</div>
     }
